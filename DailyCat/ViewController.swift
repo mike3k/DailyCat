@@ -54,7 +54,7 @@ class ViewController: UIViewController {
             caption.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 10),
             caption.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 10),
             caption.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -10),
-            caption.heightAnchor.constraint(lessThanOrEqualToConstant: 200),
+            caption.heightAnchor.constraint(lessThanOrEqualToConstant: 250),
             caption.bottomAnchor.constraint(lessThanOrEqualTo: safeArea.bottomAnchor, constant: -10),
             caption.bottomAnchor.constraint(greaterThanOrEqualTo: safeArea.bottomAnchor, constant: -80),
             button.topAnchor.constraint(equalTo: imageView.topAnchor),
@@ -70,26 +70,42 @@ class ViewController: UIViewController {
     }
 
     private func fetch() {
+        var theText: String? = nil
+        var theImage: UIImage? = nil
+        
+        let dispatchGroup = DispatchGroup()
+        
+        dispatchGroup.enter()
         catApi.getRandomImage { (imageInfo) in
             if let imageUrlString = imageInfo?["url"] as? String, let imageUrl = URL(string: imageUrlString) {
                 let dataTask = URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
                     if let data = data, let image = UIImage(data: data) {
-                        DispatchQueue.main.async {
-                            self.imageView.image = image
-                        }
+                        theImage = image
                     }
+                    dispatchGroup.leave()
                 }
                 dataTask.resume()
             }
         }
+        
+        dispatchGroup.enter()
         catFacts.getRandomFact { (fact) in
             if let fact = fact, let text = fact["text"] as? String {
-                DispatchQueue.main.async {
-                    self.caption.text = text
-                }
+                theText = text
             }
+            dispatchGroup.leave()
+        }
+  
+        dispatchGroup.wait()
+
+        if let theText = theText {
+            self.caption.text = theText
         }
         
+        if let theImage = theImage {
+            self.imageView.image = theImage
+        }
+
     }
 
 }
