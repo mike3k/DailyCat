@@ -14,6 +14,9 @@
 		2772082F24390759009F0698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2772082E24390759009F0698 /* Assets.xcassets */; };
 		2772083224390759009F0698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2772083024390759009F0698 /* LaunchScreen.storyboard */; };
 		2772083D24390759009F0698 /* DailyCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772083C24390759009F0698 /* DailyCatTests.swift */; };
+		277208482439078A009F0698 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277208472439078A009F0698 /* Endpoint.swift */; };
+		2772084C24390CDF009F0698 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084B24390CDF009F0698 /* CatFacts.swift */; };
+		2772084E24390E4C009F0698 /* CatApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084D24390E4C009F0698 /* CatApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		2772083824390759009F0698 /* DailyCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyCatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2772083C24390759009F0698 /* DailyCatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCatTests.swift; sourceTree = "<group>"; };
 		2772083E24390759009F0698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277208472439078A009F0698 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2772084B24390CDF009F0698 /* CatFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFacts.swift; sourceTree = "<group>"; };
+		2772084D24390E4C009F0698 /* CatApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				2772082E24390759009F0698 /* Assets.xcassets */,
 				2772083024390759009F0698 /* LaunchScreen.storyboard */,
 				2772083324390759009F0698 /* Info.plist */,
+				277208472439078A009F0698 /* Endpoint.swift */,
+				2772084B24390CDF009F0698 /* CatFacts.swift */,
+				2772084D24390E4C009F0698 /* CatApi.swift */,
 			);
 			path = DailyCat;
 			sourceTree = "<group>";
@@ -201,7 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2772082A24390755009F0698 /* ViewController.swift in Sources */,
+				2772084E24390E4C009F0698 /* CatApi.swift in Sources */,
 				2772082624390755009F0698 /* AppDelegate.swift in Sources */,
+				2772084C24390CDF009F0698 /* CatFacts.swift in Sources */,
+				277208482439078A009F0698 /* Endpoint.swift in Sources */,
 				2772082824390755009F0698 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
