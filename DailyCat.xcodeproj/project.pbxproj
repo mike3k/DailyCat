@@ -17,6 +17,7 @@
 		277208482439078A009F0698 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277208472439078A009F0698 /* Endpoint.swift */; };
 		2772084C24390CDF009F0698 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084B24390CDF009F0698 /* CatFacts.swift */; };
 		2772084E24390E4C009F0698 /* CatApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084D24390E4C009F0698 /* CatApi.swift */; };
+		27720852243A7528009F0698 /* cat_in_box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27720851243A7528009F0698 /* cat_in_box.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		277208472439078A009F0698 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2772084B24390CDF009F0698 /* CatFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFacts.swift; sourceTree = "<group>"; };
 		2772084D24390E4C009F0698 /* CatApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApi.swift; sourceTree = "<group>"; };
+		27720851243A7528009F0698 /* cat_in_box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_in_box.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				2772082924390755009F0698 /* ViewController.swift */,
 				2772082B24390755009F0698 /* Main.storyboard */,
 				2772082E24390759009F0698 /* Assets.xcassets */,
+				27720851243A7528009F0698 /* cat_in_box.jpg */,
 				2772083024390759009F0698 /* LaunchScreen.storyboard */,
 				2772083324390759009F0698 /* Info.plist */,
 				277208472439078A009F0698 /* Endpoint.swift */,
@@ -192,6 +195,7 @@
 				2772083224390759009F0698 /* LaunchScreen.storyboard in Resources */,
 				2772082F24390759009F0698 /* Assets.xcassets in Resources */,
 				2772082D24390755009F0698 /* Main.storyboard in Resources */,
+				27720852243A7528009F0698 /* cat_in_box.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
