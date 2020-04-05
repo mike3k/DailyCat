@@ -9,9 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private let stackView = UIStackView()
     private let imageView = UIImageView()
     private let caption = UILabel()
-    private let button = UIButton(type: .custom)
+    private let nextButton = UIButton(type: .custom)
+    private let footer = UIView()
+    
     
     private let catFacts = CatFacts()
     private let catApi = CatApi()
@@ -27,13 +30,19 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .black
         
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(stackView)
+        stackView.axis = .vertical
+        stackView.backgroundColor = .clear
+        stackView.spacing = 10
+        
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(imageView)
+        stackView.addArrangedSubview(imageView)
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .clear
         
         caption.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(caption)
+        stackView.addArrangedSubview(caption)
         caption.numberOfLines = 0
         caption.textAlignment = .center
         caption.lineBreakMode = .byWordWrapping
@@ -41,26 +50,36 @@ class ViewController: UIViewController {
         caption.textColor = .white
         caption.font = .systemFont(ofSize: 18)
         
-        button.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(button)
-        button.addTarget(self, action: #selector(fetchNext(_:)), for: .touchUpInside)
+        footer.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(footer)
+        footer.backgroundColor = .clear
         
+        nextButton.translatesAutoresizingMaskIntoConstraints = false
+        footer.addSubview(nextButton)
+        nextButton.addTarget(self, action: #selector(fetchNext(_:)), for: .touchUpInside)
+        nextButton.setTitle("Next", for: .normal)
+        nextButton.tintColor = .white
         
         let safeArea = self.view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: safeArea.topAnchor),
-            imageView.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
-            imageView.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
-            caption.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 10),
-            caption.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 10),
-            caption.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -10),
-            caption.heightAnchor.constraint(lessThanOrEqualToConstant: 250),
-            caption.bottomAnchor.constraint(lessThanOrEqualTo: safeArea.bottomAnchor, constant: -10),
-            caption.bottomAnchor.constraint(greaterThanOrEqualTo: safeArea.bottomAnchor, constant: -80),
-            button.topAnchor.constraint(equalTo: imageView.topAnchor),
-            button.bottomAnchor.constraint(equalTo: caption.bottomAnchor),
-            button.leftAnchor.constraint(equalTo: imageView.leftAnchor),
-            button.rightAnchor.constraint(equalTo: imageView.rightAnchor),
+            stackView.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            stackView.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
+            stackView.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
+            
+            footer.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
+            footer.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
+            footer.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor),
+            footer.heightAnchor.constraint(equalToConstant: 50),
+            
+            imageView.leftAnchor.constraint(equalTo: stackView.leftAnchor),
+            imageView.rightAnchor.constraint(equalTo: stackView.rightAnchor),
+            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor),
+            
+            caption.leftAnchor.constraint(equalTo: stackView.leftAnchor, constant: 10),
+            caption.rightAnchor.constraint(equalTo: stackView.rightAnchor, constant: -10),
+            
+            nextButton.rightAnchor.constraint(equalTo: footer.rightAnchor, constant: -20),
+            nextButton.centerYAnchor.constraint(equalTo: footer.centerYAnchor),
         ])
         
     }
