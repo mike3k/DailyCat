@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     private let imageView = UIImageView()
     private let caption = UILabel()
     private let nextButton = UIButton(type: .custom)
+    private let shareButton = UIButton(type: .custom)
     private let footer = UIView()
     
     
@@ -60,6 +61,12 @@ class ViewController: UIViewController {
         nextButton.setTitle("Next", for: .normal)
         nextButton.tintColor = .white
         
+        shareButton.translatesAutoresizingMaskIntoConstraints = false
+        footer.addSubview(shareButton)
+        shareButton.addTarget(self, action: #selector(share(_:)), for: .touchUpInside)
+        shareButton.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
+        shareButton.tintColor = .white
+        
         let safeArea = self.view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: safeArea.topAnchor),
@@ -80,6 +87,9 @@ class ViewController: UIViewController {
             
             nextButton.rightAnchor.constraint(equalTo: footer.rightAnchor, constant: -20),
             nextButton.centerYAnchor.constraint(equalTo: footer.centerYAnchor),
+            
+            shareButton.leftAnchor.constraint(equalTo: footer.leftAnchor, constant: 20),
+            shareButton.centerYAnchor.constraint(equalTo: footer.centerYAnchor),
         ])
         
     }
@@ -88,6 +98,15 @@ class ViewController: UIViewController {
         fetch()
     }
 
+    @objc func share(_ sender: Any?) {
+        var items: [Any] = [caption.text ?? ""]
+        if let image: UIImage = imageView.image {
+            items.append(image)
+        }
+        let vc = UIActivityViewController(activityItems: items, applicationActivities: [])
+        present(vc, animated: true, completion: nil)
+    }
+    
     private func fetch() {
         var theText: String? = nil
         var theImage: UIImage? = nil
