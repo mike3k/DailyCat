@@ -8,7 +8,7 @@
 
 import UIKit
 
-let info = "<html><body><font size=5><h4 align=center>Daily Cat Facts</h4><p>We all need more cats to get us through these times, so I'm bringing you random cat facts & cute cats to look at.</p><p>Written by Mike Cohen</p><p>Based on two public APIs: <a href='https://github.com/alexwohlbruck/cat-facts'>Cat Facts</a> by Alex Wohlbruck, and <a href='https://thecatapi.com'>The Cat AAPI</a></p></font></body></html>"
+let info = "<html><body><font size=5><h4 align=center>Daily Cat Facts</h4><p>We all need more cats to get us through these times, so I'm bringing you random cat facts & cute cats to look at.</p><p>Written by Mike Cohen</p><p>Based on two public APIs: <a href='https://github.com/alexwohlbruck/cat-facts'>Cat Facts</a> by Alex Wohlbruck, and <a href='https://thecatapi.com'>The Cat API</a></p></font></body></html>"
 
 class AboutScreen: UIViewController {
     private let aboutView = UITextView()
