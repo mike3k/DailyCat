@@ -136,6 +136,7 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
     
     @objc func showInfo(_ sender: Any?) {
         let vc = AboutScreen()
+        vc.modalPresentationStyle = .overCurrentContext
         present(vc, animated: true, completion: {
         })
     }
