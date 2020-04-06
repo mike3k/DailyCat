@@ -20,6 +20,7 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
     private let caption = UILabel()
     private let nextButton = UIButton(type: .custom)
     private let shareButton = UIButton(type: .custom)
+    private let infoButton = UIButton(type: .infoDark)
     private let footer = UIView()
     
     
@@ -82,6 +83,11 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         shareButton.adjustsImageWhenHighlighted = true
         shareButton.tintColor = .white
         
+        infoButton.translatesAutoresizingMaskIntoConstraints = false
+        footer.addSubview(infoButton)
+        infoButton.addTarget(self, action: #selector(showInfo(_:)), for: .touchUpInside)
+        infoButton.tintColor = .white
+        
         let safeArea = self.view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
             bannerView.topAnchor.constraint(equalTo: safeArea.topAnchor),
@@ -106,7 +112,10 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
             nextButton.rightAnchor.constraint(equalTo: footer.rightAnchor, constant: -20),
             nextButton.centerYAnchor.constraint(equalTo: footer.centerYAnchor),
             
-            shareButton.leftAnchor.constraint(equalTo: footer.leftAnchor, constant: 20),
+            infoButton.leftAnchor.constraint(equalTo: footer.leftAnchor, constant: 20),
+            infoButton.centerYAnchor.constraint(equalTo: footer.centerYAnchor),
+            
+            shareButton.leftAnchor.constraint(equalTo: infoButton.rightAnchor, constant: 20),
             shareButton.centerYAnchor.constraint(equalTo: footer.centerYAnchor),
         ])
         
@@ -123,6 +132,13 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         }
         let vc = UIActivityViewController(activityItems: items, applicationActivities: [])
         present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func showInfo(_ sender: Any?) {
+        let vc = AboutScreen()
+        vc.modalPresentationStyle = .formSheet
+        present(vc, animated: true, completion: {
+        })
     }
     
     private func fetch() {

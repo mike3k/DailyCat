@@ -19,6 +19,7 @@
 		2772084C24390CDF009F0698 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084B24390CDF009F0698 /* CatFacts.swift */; };
 		2772084E24390E4C009F0698 /* CatApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084D24390E4C009F0698 /* CatApi.swift */; };
 		27720852243A7528009F0698 /* cat_in_box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27720851243A7528009F0698 /* cat_in_box.jpg */; };
+		277E5E4F243B9E9900BBEBA8 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277E5E4E243B9E9900BBEBA8 /* AboutScreen.swift */; };
 		3A09B5152B1DDBEE22F1D201 /* Pods_DailyCatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72197702376335AD0E319E8 /* Pods_DailyCatTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		2772084D24390E4C009F0698 /* CatApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApi.swift; sourceTree = "<group>"; };
 		27720851243A7528009F0698 /* cat_in_box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_in_box.jpg; sourceTree = "<group>"; };
 		27720853243AB326009F0698 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		277E5E4E243B9E9900BBEBA8 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
 		2BA0DAE20499D69B7119F094 /* Pods-DailyCatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCatTests.release.xcconfig"; path = "Target Support Files/Pods-DailyCatTests/Pods-DailyCatTests.release.xcconfig"; sourceTree = "<group>"; };
 		32F87504CF4D09818EB4A643 /* Pods-DailyCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCat.release.xcconfig"; path = "Target Support Files/Pods-DailyCat/Pods-DailyCat.release.xcconfig"; sourceTree = "<group>"; };
 		B6D345525AAB59E2A6F780F6 /* Pods-DailyCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCat.debug.xcconfig"; path = "Target Support Files/Pods-DailyCat/Pods-DailyCat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				2772082524390755009F0698 /* AppDelegate.swift */,
 				2772082724390755009F0698 /* SceneDelegate.swift */,
 				2772082924390755009F0698 /* ViewController.swift */,
+				277E5E4E243B9E9900BBEBA8 /* AboutScreen.swift */,
 				2772082B24390755009F0698 /* Main.storyboard */,
 				2772082E24390759009F0698 /* Assets.xcassets */,
 				27720851243A7528009F0698 /* cat_in_box.jpg */,
@@ -319,6 +322,7 @@
 				2772082624390755009F0698 /* AppDelegate.swift in Sources */,
 				2772084C24390CDF009F0698 /* CatFacts.swift in Sources */,
 				277208482439078A009F0698 /* Endpoint.swift in Sources */,
+				277E5E4F243B9E9900BBEBA8 /* AboutScreen.swift in Sources */,
 				2772082824390755009F0698 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
