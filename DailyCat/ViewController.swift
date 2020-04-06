@@ -8,7 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import GoogleMobileAds
+
+fileprivate let adUnitId = "ca-app-pub-5764584662183604/4166042076"
+//fileprivate let adUnitId = "ca-app-pub-3940256099942544/2934735716" // test id
+
+class ViewController: UIViewController, GADBannerViewDelegate  {
+    private let bannerView = GADBannerView(adSize: kGADAdSizeBanner)
     private let stackView = UIStackView()
     private let imageView = UIImageView()
     private let caption = UILabel()
@@ -23,6 +29,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        bannerView.adUnitID = adUnitId
+        bannerView.rootViewController = self
+        bannerView.delegate = self
+        bannerView.load(GADRequest())
         fetch()
     }
     
@@ -31,6 +41,9 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .black
         
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(bannerView)
+
         stackView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(stackView)
         stackView.axis = .vertical
@@ -69,7 +82,10 @@ class ViewController: UIViewController {
         
         let safeArea = self.view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            bannerView.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            stackView.topAnchor.constraint(equalTo: bannerView.bottomAnchor),
             stackView.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
             stackView.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
             

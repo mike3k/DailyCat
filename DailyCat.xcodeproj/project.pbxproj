@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1179F1B5BC21A08905398C /* Pods_DailyCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139D29FF31E4F58A8C85DF85 /* Pods_DailyCat.framework */; };
 		2772082624390755009F0698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772082524390755009F0698 /* AppDelegate.swift */; };
 		2772082824390755009F0698 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772082724390755009F0698 /* SceneDelegate.swift */; };
 		2772082A24390755009F0698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772082924390755009F0698 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 		2772084C24390CDF009F0698 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084B24390CDF009F0698 /* CatFacts.swift */; };
 		2772084E24390E4C009F0698 /* CatApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084D24390E4C009F0698 /* CatApi.swift */; };
 		27720852243A7528009F0698 /* cat_in_box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27720851243A7528009F0698 /* cat_in_box.jpg */; };
+		3A09B5152B1DDBEE22F1D201 /* Pods_DailyCatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72197702376335AD0E319E8 /* Pods_DailyCatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		139D29FF31E4F58A8C85DF85 /* Pods_DailyCat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyCat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2772082224390755009F0698 /* DailyCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2772082524390755009F0698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2772082724390755009F0698 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +49,12 @@
 		2772084B24390CDF009F0698 /* CatFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFacts.swift; sourceTree = "<group>"; };
 		2772084D24390E4C009F0698 /* CatApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApi.swift; sourceTree = "<group>"; };
 		27720851243A7528009F0698 /* cat_in_box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_in_box.jpg; sourceTree = "<group>"; };
+		27720853243AB326009F0698 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA0DAE20499D69B7119F094 /* Pods-DailyCatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCatTests.release.xcconfig"; path = "Target Support Files/Pods-DailyCatTests/Pods-DailyCatTests.release.xcconfig"; sourceTree = "<group>"; };
+		32F87504CF4D09818EB4A643 /* Pods-DailyCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCat.release.xcconfig"; path = "Target Support Files/Pods-DailyCat/Pods-DailyCat.release.xcconfig"; sourceTree = "<group>"; };
+		B6D345525AAB59E2A6F780F6 /* Pods-DailyCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCat.debug.xcconfig"; path = "Target Support Files/Pods-DailyCat/Pods-DailyCat.debug.xcconfig"; sourceTree = "<group>"; };
+		BFBA464C834A9C57979625FF /* Pods-DailyCatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCatTests.debug.xcconfig"; path = "Target Support Files/Pods-DailyCatTests/Pods-DailyCatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C72197702376335AD0E319E8 /* Pods_DailyCatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyCatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1179F1B5BC21A08905398C /* Pods_DailyCat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,18 +70,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A09B5152B1DDBEE22F1D201 /* Pods_DailyCatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166333D1A72A6147B901A89C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6D345525AAB59E2A6F780F6 /* Pods-DailyCat.debug.xcconfig */,
+				32F87504CF4D09818EB4A643 /* Pods-DailyCat.release.xcconfig */,
+				BFBA464C834A9C57979625FF /* Pods-DailyCatTests.debug.xcconfig */,
+				2BA0DAE20499D69B7119F094 /* Pods-DailyCatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2772081924390755009F0698 = {
 			isa = PBXGroup;
 			children = (
 				2772082424390755009F0698 /* DailyCat */,
 				2772083B24390759009F0698 /* DailyCatTests */,
 				2772082324390755009F0698 /* Products */,
+				166333D1A72A6147B901A89C /* Pods */,
+				6B345C05E4FDB73EC41C4F8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +135,16 @@
 			path = DailyCatTests;
 			sourceTree = "<group>";
 		};
+		6B345C05E4FDB73EC41C4F8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27720853243AB326009F0698 /* GoogleUtilities.framework */,
+				139D29FF31E4F58A8C85DF85 /* Pods_DailyCat.framework */,
+				C72197702376335AD0E319E8 /* Pods_DailyCatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2772084124390759009F0698 /* Build configuration list for PBXNativeTarget "DailyCat" */;
 			buildPhases = (
+				F190AD7F7568119A8CA30769 /* [CP] Check Pods Manifest.lock */,
 				2772081E24390755009F0698 /* Sources */,
 				2772081F24390755009F0698 /* Frameworks */,
 				2772082024390755009F0698 /* Resources */,
+				E08D2E906C6273D9617B1F9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2772084424390759009F0698 /* Build configuration list for PBXNativeTarget "DailyCatTests" */;
 			buildPhases = (
+				3895E959FC0075901AB58291 /* [CP] Check Pods Manifest.lock */,
 				2772083424390759009F0698 /* Sources */,
 				2772083524390759009F0698 /* Frameworks */,
 				2772083624390759009F0698 /* Resources */,
@@ -207,6 +244,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3895E959FC0075901AB58291 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyCatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E08D2E906C6273D9617B1F9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyCat/Pods-DailyCat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyCat/Pods-DailyCat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyCat/Pods-DailyCat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F190AD7F7568119A8CA30769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyCat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2772081E24390755009F0698 /* Sources */ = {
@@ -376,11 +477,13 @@
 		};
 		2772084224390759009F0698 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D345525AAB59E2A6F780F6 /* Pods-DailyCat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJQW94A385;
 				INFOPLIST_FILE = DailyCat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,17 +491,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2772084324390759009F0698 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F87504CF4D09818EB4A643 /* Pods-DailyCat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJQW94A385;
 				INFOPLIST_FILE = DailyCat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,12 +511,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		2772084524390759009F0698 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBA464C834A9C57979625FF /* Pods-DailyCatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -434,6 +540,7 @@
 		};
 		2772084624390759009F0698 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA0DAE20499D69B7119F094 /* Pods-DailyCatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
