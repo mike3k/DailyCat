@@ -136,7 +136,6 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
     
     @objc func showInfo(_ sender: Any?) {
         let vc = AboutScreen()
-        vc.modalPresentationStyle = .formSheet
         present(vc, animated: true, completion: {
         })
     }

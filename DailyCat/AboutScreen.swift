@@ -12,12 +12,19 @@ let info = "<html><body><font size=5><h4 align=center>Daily Cat Facts</h4><p>We 
 
 class AboutScreen: UIViewController {
     private let aboutView = UITextView()
+    private let backgroundView = UIView()
     
     override func loadView() {
         super.loadView()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
         
+        backgroundView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(backgroundView)
+        backgroundView.backgroundColor = .white
+        backgroundView.layer.cornerRadius = 10;
+        backgroundView.clipsToBounds  =  true
+
         aboutView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(aboutView)
         aboutView.backgroundColor = .clear
@@ -27,26 +34,32 @@ class AboutScreen: UIViewController {
         let safeArea = view.safeAreaLayoutGuide
         
         NSLayoutConstraint.activate([
-            aboutView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 20),
-            aboutView.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 20),
-            aboutView.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -20),
-            aboutView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -20),
+            backgroundView.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 20),
+            backgroundView.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -20),
+            backgroundView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            backgroundView.heightAnchor.constraint(equalTo: aboutView.widthAnchor),
+            
+            aboutView.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 5),
+            aboutView.leftAnchor.constraint(equalTo: backgroundView.leftAnchor, constant: 5),
+            aboutView.rightAnchor.constraint(equalTo: backgroundView.rightAnchor, constant: -5),
+            aboutView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -5),
         ])
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapHandler(_:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func tapHandler(_ sender: UITapGestureRecognizer) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.preferredContentSize = CGSize(width: 500, height: 500)
         // Do any additional setup after loading the view.
         if let htmlData = NSString(string: info).data(using: String.Encoding.utf8.rawValue),
           let attributedString = try? NSMutableAttributedString(data: htmlData,
                                                          options: [.documentType: NSAttributedString.DocumentType.html],
                                                          documentAttributes: nil) {
-            attributedString.addAttributes([
-                NSAttributedString.Key.backgroundColor: UIColor.clear,
-                NSAttributedString.Key.foregroundColor: UIColor.darkText
-            ], range: NSRange(location: 0, length: attributedString.length-1))
             aboutView.attributedText = attributedString
         }
 
