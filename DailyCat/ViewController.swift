@@ -72,12 +72,14 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         footer.addSubview(nextButton)
         nextButton.addTarget(self, action: #selector(fetchNext(_:)), for: .touchUpInside)
         nextButton.setTitle("Next", for: .normal)
+        nextButton.setTitleColor(.blue, for: .highlighted)
         nextButton.tintColor = .white
         
         shareButton.translatesAutoresizingMaskIntoConstraints = false
         footer.addSubview(shareButton)
         shareButton.addTarget(self, action: #selector(share(_:)), for: .touchUpInside)
         shareButton.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
+        shareButton.adjustsImageWhenHighlighted = true
         shareButton.tintColor = .white
         
         let safeArea = self.view.safeAreaLayoutGuide
