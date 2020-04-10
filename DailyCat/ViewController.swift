@@ -15,6 +15,7 @@ fileprivate let adUnitId = "ca-app-pub-5764584662183604/4166042076"
 
 class ViewController: UIViewController, GADBannerViewDelegate  {
     private let bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+    private let bannerBackground = UIView()
     private let stackView = UIStackView()
     private let imageView = UIImageView()
     private let caption = UILabel()
@@ -42,8 +43,12 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         
         view.backgroundColor = .black
         
+        bannerBackground.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(bannerBackground)
+        bannerBackground.backgroundColor = .white
+        
         bannerView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(bannerView)
+        bannerBackground.addSubview(bannerView)
 
         stackView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(stackView)
@@ -90,10 +95,15 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         
         let safeArea = self.view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
-            bannerView.topAnchor.constraint(equalTo: safeArea.topAnchor),
-            bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            bannerBackground.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            bannerBackground.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
+            bannerBackground.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
             
-            stackView.topAnchor.constraint(equalTo: bannerView.bottomAnchor),
+            bannerView.topAnchor.constraint(equalTo: bannerBackground.topAnchor),
+            bannerView.bottomAnchor.constraint(equalTo: bannerBackground.bottomAnchor),
+            bannerView.centerXAnchor.constraint(equalTo: bannerBackground.centerXAnchor),
+            
+            stackView.topAnchor.constraint(equalTo: bannerBackground.bottomAnchor, constant: 5),
             stackView.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
             stackView.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
             
@@ -136,6 +146,7 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
     
     @objc func showInfo(_ sender: Any?) {
         let vc = AboutScreen()
+        vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .overCurrentContext
         present(vc, animated: true, completion: {
         })

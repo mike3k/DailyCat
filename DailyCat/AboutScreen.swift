@@ -23,6 +23,8 @@ class AboutScreen: UIViewController {
         view.addSubview(backgroundView)
         backgroundView.backgroundColor = .white
         backgroundView.layer.cornerRadius = 10;
+        backgroundView.layer.borderColor = UIColor.black.cgColor
+        backgroundView.layer.borderWidth = 0.5
         backgroundView.clipsToBounds  =  true
 
         aboutView.translatesAutoresizingMaskIntoConstraints = false
