@@ -38,10 +38,34 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         fetch()
     }
     
+    private func setDarkMode(_ isDarkMode: Bool) {
+        if isDarkMode {
+            view.backgroundColor = .black
+            caption.textColor = .white
+            nextButton.tintColor = .white
+            shareButton.tintColor = .white
+            infoButton.tintColor = .white
+            nextButton.setTitleColor(.white, for: .normal)
+            nextButton.setTitleColor(.blue, for: .highlighted)
+        } else {
+            view.backgroundColor = .white
+            caption.textColor = .black
+            nextButton.tintColor = .black
+            shareButton.tintColor = .black
+            infoButton.tintColor = .black
+            nextButton.setTitleColor(.black, for: .normal)
+            nextButton.setTitleColor(.cyan, for: .highlighted)
+        }
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        setDarkMode(traitCollection.userInterfaceStyle == .dark)
+        view.setNeedsDisplay()
+    }
+    
     override func loadView() {
         super.loadView()
         
-        view.backgroundColor = .black
         
         bannerBackground.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(bannerBackground)
@@ -67,7 +91,6 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         caption.textAlignment = .center
         caption.lineBreakMode = .byWordWrapping
         caption.backgroundColor = .clear
-        caption.textColor = .white
         caption.font = .systemFont(ofSize: 18)
         
         footer.translatesAutoresizingMaskIntoConstraints = false
@@ -78,21 +101,19 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         footer.addSubview(nextButton)
         nextButton.addTarget(self, action: #selector(fetchNext(_:)), for: .touchUpInside)
         nextButton.setTitle("Next", for: .normal)
-        nextButton.setTitleColor(.blue, for: .highlighted)
-        nextButton.tintColor = .white
         
         shareButton.translatesAutoresizingMaskIntoConstraints = false
         footer.addSubview(shareButton)
         shareButton.addTarget(self, action: #selector(share(_:)), for: .touchUpInside)
         shareButton.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
         shareButton.adjustsImageWhenHighlighted = true
-        shareButton.tintColor = .white
         
         infoButton.translatesAutoresizingMaskIntoConstraints = false
         footer.addSubview(infoButton)
         infoButton.addTarget(self, action: #selector(showInfo(_:)), for: .touchUpInside)
-        infoButton.tintColor = .white
         
+        setDarkMode(traitCollection.userInterfaceStyle == .dark)
+
         let safeArea = self.view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
             bannerBackground.topAnchor.constraint(equalTo: safeArea.topAnchor),
