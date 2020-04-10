@@ -158,11 +158,11 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
 
     @objc func share(_ sender: Any?) {
         var items: [Any] = []
-        if let text: String = caption.text {
-            items.append("\(text) #CatFacts ")
-        }
         if let image: UIImage = imageView.image {
             items.append(image)
+        }
+        if let text: String = caption.text {
+            items.append("\(text) #CatFacts ")
         }
         let vc = UIActivityViewController(activityItems: items, applicationActivities: [])
         present(vc, animated: true, completion: nil)
