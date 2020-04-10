@@ -157,7 +157,10 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
     }
 
     @objc func share(_ sender: Any?) {
-        var items: [Any] = [caption.text ?? ""]
+        var items: [Any] = []
+        if let text: String = caption.text {
+            items.append("\(text) #CatFacts ")
+        }
         if let image: UIImage = imageView.image {
             items.append(image)
         }
