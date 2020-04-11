@@ -78,7 +78,8 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         self.view.addSubview(stackView)
         stackView.axis = .vertical
         stackView.backgroundColor = .clear
-        stackView.spacing = 10
+        stackView.alignment = .leading
+        stackView.spacing = 5
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         stackView.addArrangedSubview(imageView)
@@ -127,6 +128,7 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
             stackView.topAnchor.constraint(equalTo: bannerBackground.bottomAnchor, constant: 5),
             stackView.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
             stackView.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
+            stackView.bottomAnchor.constraint(lessThanOrEqualTo: footer.topAnchor),
             
             footer.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
             footer.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
