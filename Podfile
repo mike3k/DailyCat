@@ -6,7 +6,7 @@ target 'DailyCat' do
   use_frameworks!
 
   # Pods for DailyCat
-  pod 'Google-Mobile-Ads-SDK'
+#  pod 'Google-Mobile-Ads-SDK'
 
   target 'DailyCatTests' do
     inherit! :search_paths

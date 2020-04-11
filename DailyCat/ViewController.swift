@@ -8,14 +8,13 @@
 
 import UIKit
 
-import GoogleMobileAds
+//import GoogleMobileAds
 
-fileprivate let adUnitId = "ca-app-pub-5764584662183604/4166042076"
 //fileprivate let adUnitId = "ca-app-pub-3940256099942544/2934735716" // test id
 
-class ViewController: UIViewController, GADBannerViewDelegate  {
-    private let bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-    private let bannerBackground = UIView()
+class ViewController: UIViewController  {
+//    private let bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+//    private let bannerBackground = UIView()
     private let stackView = UIStackView()
     private let imageView = UIImageView()
     private let caption = UILabel()
@@ -31,10 +30,10 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        bannerView.adUnitID = adUnitId
-        bannerView.rootViewController = self
-        bannerView.delegate = self
-        bannerView.load(GADRequest())
+//        bannerView.adUnitID = adUnitId
+//        bannerView.rootViewController = self
+//        bannerView.delegate = self
+//        bannerView.load(GADRequest())
         fetch()
     }
     
@@ -67,12 +66,12 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
         super.loadView()
         
         
-        bannerBackground.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(bannerBackground)
-        bannerBackground.backgroundColor = .white
-        
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        bannerBackground.addSubview(bannerView)
+//        bannerBackground.translatesAutoresizingMaskIntoConstraints = false
+//        self.view.addSubview(bannerBackground)
+//        bannerBackground.backgroundColor = .white
+//
+//        bannerView.translatesAutoresizingMaskIntoConstraints = false
+//        bannerBackground.addSubview(bannerView)
 
         stackView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(stackView)
@@ -117,15 +116,15 @@ class ViewController: UIViewController, GADBannerViewDelegate  {
 
         let safeArea = self.view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
-            bannerBackground.topAnchor.constraint(equalTo: safeArea.topAnchor),
-            bannerBackground.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
-            bannerBackground.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
+//            bannerBackground.topAnchor.constraint(equalTo: safeArea.topAnchor),
+//            bannerBackground.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
+//            bannerBackground.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
+//
+//            bannerView.topAnchor.constraint(equalTo: bannerBackground.topAnchor),
+//            bannerView.bottomAnchor.constraint(equalTo: bannerBackground.bottomAnchor),
+//            bannerView.centerXAnchor.constraint(equalTo: bannerBackground.centerXAnchor),
             
-            bannerView.topAnchor.constraint(equalTo: bannerBackground.topAnchor),
-            bannerView.bottomAnchor.constraint(equalTo: bannerBackground.bottomAnchor),
-            bannerView.centerXAnchor.constraint(equalTo: bannerBackground.centerXAnchor),
-            
-            stackView.topAnchor.constraint(equalTo: bannerBackground.bottomAnchor, constant: 5),
+            stackView.topAnchor.constraint(equalTo: safeArea.topAnchor),
             stackView.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
             stackView.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
             stackView.bottomAnchor.constraint(lessThanOrEqualTo: footer.topAnchor),
