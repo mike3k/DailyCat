@@ -6,11 +6,19 @@
 //  Copyright © 2020 Mike Cohen. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 private let apiKey = "6438943e-2ac1-4d15-a9e5-3c47b50d7279"
 
-class CatApi: Endpoint {
+struct CatImage: Codable {
+    let id: String
+    let url: String
+    let width: Int
+    let height: Int
+}
+
+class CatApi: Endpoint, ObservableObject {
+    @Published var imageInfo: CatImage?
     init() {
         super.init(baseUrl: "https://api.thecatapi.com/v1/")
     }
@@ -21,14 +29,14 @@ class CatApi: Endpoint {
         return request
     }
     
-    func getRandomImage(completion: @escaping ([AnyHashable: Any]?)->Void) {
-        fetch(method: "images/search?limit=1") { (json) in
-            guard let cats = json as? [[AnyHashable: Any]],
-                cats.count > 0 else {
-                    completion(nil)
-                    return
+    func getRandomImage() {
+        fetch(method: "images/search?limit=1") { (data) in
+            let decoder =  JSONDecoder()
+            if let data = data,
+                let result = try? decoder.decode([CatImage].self, from: data),
+                result.count > 0 {
+                DispatchQueue.main.async { self.imageInfo = result[0] }
             }
-            completion(cats[0])
         }
     }
 }

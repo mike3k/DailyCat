@@ -3,100 +3,91 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A1179F1B5BC21A08905398C /* Pods_DailyCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139D29FF31E4F58A8C85DF85 /* Pods_DailyCat.framework */; };
-		2772082624390755009F0698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772082524390755009F0698 /* AppDelegate.swift */; };
-		2772082824390755009F0698 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772082724390755009F0698 /* SceneDelegate.swift */; };
-		2772082A24390755009F0698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772082924390755009F0698 /* ViewController.swift */; };
-		2772082D24390755009F0698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2772082B24390755009F0698 /* Main.storyboard */; };
-		2772082F24390759009F0698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2772082E24390759009F0698 /* Assets.xcassets */; };
-		2772083224390759009F0698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2772083024390759009F0698 /* LaunchScreen.storyboard */; };
-		2772083D24390759009F0698 /* DailyCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772083C24390759009F0698 /* DailyCatTests.swift */; };
-		277208482439078A009F0698 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277208472439078A009F0698 /* Endpoint.swift */; };
-		2772084C24390CDF009F0698 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084B24390CDF009F0698 /* CatFacts.swift */; };
-		2772084E24390E4C009F0698 /* CatApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084D24390E4C009F0698 /* CatApi.swift */; };
-		27720852243A7528009F0698 /* cat_in_box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27720851243A7528009F0698 /* cat_in_box.jpg */; };
-		277E5E4F243B9E9900BBEBA8 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277E5E4E243B9E9900BBEBA8 /* AboutScreen.swift */; };
-		3A09B5152B1DDBEE22F1D201 /* Pods_DailyCatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72197702376335AD0E319E8 /* Pods_DailyCatTests.framework */; };
+		27A579DD2A326AD7008CAB61 /* DailyCat2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A579DC2A326AD7008CAB61 /* DailyCat2App.swift */; };
+		27A579DF2A326AD7008CAB61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A579DE2A326AD7008CAB61 /* ContentView.swift */; };
+		27A579E12A326ADC008CAB61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A579E02A326ADC008CAB61 /* Assets.xcassets */; };
+		27A579E42A326ADC008CAB61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A579E32A326ADC008CAB61 /* Preview Assets.xcassets */; };
+		27A579EE2A326ADD008CAB61 /* DailyCat2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A579ED2A326ADD008CAB61 /* DailyCat2Tests.swift */; };
+		27A579F82A326ADD008CAB61 /* DailyCat2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A579F72A326ADD008CAB61 /* DailyCat2UITests.swift */; };
+		27A579FA2A326ADD008CAB61 /* DailyCat2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A579F92A326ADD008CAB61 /* DailyCat2UITestsLaunchTests.swift */; };
+		27A57A042A326B05008CAB61 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277208472439078A009F0698 /* Endpoint.swift */; };
+		27A57A052A326B05008CAB61 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084B24390CDF009F0698 /* CatFacts.swift */; };
+		27A57A062A326B05008CAB61 /* CatApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772084D24390E4C009F0698 /* CatApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2772083924390759009F0698 /* PBXContainerItemProxy */ = {
+		27A579EA2A326ADC008CAB61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2772081A24390755009F0698 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2772082124390755009F0698;
-			remoteInfo = DailyCat;
+			remoteGlobalIDString = 27A579D92A326AD6008CAB61;
+			remoteInfo = DailyCat2;
+		};
+		27A579F42A326ADD008CAB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2772081A24390755009F0698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A579D92A326AD6008CAB61;
+			remoteInfo = DailyCat2;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		139D29FF31E4F58A8C85DF85 /* Pods_DailyCat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyCat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2772082224390755009F0698 /* DailyCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2772082524390755009F0698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2772082724390755009F0698 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2772082924390755009F0698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2772082C24390755009F0698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2772082E24390759009F0698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2772083124390759009F0698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2772083324390759009F0698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2772083824390759009F0698 /* DailyCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyCatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2772083C24390759009F0698 /* DailyCatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCatTests.swift; sourceTree = "<group>"; };
-		2772083E24390759009F0698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277208472439078A009F0698 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2772084B24390CDF009F0698 /* CatFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFacts.swift; sourceTree = "<group>"; };
 		2772084D24390E4C009F0698 /* CatApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApi.swift; sourceTree = "<group>"; };
 		27720851243A7528009F0698 /* cat_in_box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_in_box.jpg; sourceTree = "<group>"; };
-		27720853243AB326009F0698 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		277E5E4E243B9E9900BBEBA8 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
-		2BA0DAE20499D69B7119F094 /* Pods-DailyCatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCatTests.release.xcconfig"; path = "Target Support Files/Pods-DailyCatTests/Pods-DailyCatTests.release.xcconfig"; sourceTree = "<group>"; };
-		32F87504CF4D09818EB4A643 /* Pods-DailyCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCat.release.xcconfig"; path = "Target Support Files/Pods-DailyCat/Pods-DailyCat.release.xcconfig"; sourceTree = "<group>"; };
-		B6D345525AAB59E2A6F780F6 /* Pods-DailyCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCat.debug.xcconfig"; path = "Target Support Files/Pods-DailyCat/Pods-DailyCat.debug.xcconfig"; sourceTree = "<group>"; };
-		BFBA464C834A9C57979625FF /* Pods-DailyCatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCatTests.debug.xcconfig"; path = "Target Support Files/Pods-DailyCatTests/Pods-DailyCatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C72197702376335AD0E319E8 /* Pods_DailyCatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyCatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A579DA2A326AD6008CAB61 /* DailyCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A579DC2A326AD7008CAB61 /* DailyCat2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCat2App.swift; sourceTree = "<group>"; };
+		27A579DE2A326AD7008CAB61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		27A579E02A326ADC008CAB61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27A579E32A326ADC008CAB61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27A579E92A326ADC008CAB61 /* DailyCat2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyCat2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A579ED2A326ADD008CAB61 /* DailyCat2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCat2Tests.swift; sourceTree = "<group>"; };
+		27A579F32A326ADD008CAB61 /* DailyCat2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyCat2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A579F72A326ADD008CAB61 /* DailyCat2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCat2UITests.swift; sourceTree = "<group>"; };
+		27A579F92A326ADD008CAB61 /* DailyCat2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCat2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2772081F24390755009F0698 /* Frameworks */ = {
+		27A579D72A326AD6008CAB61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1179F1B5BC21A08905398C /* Pods_DailyCat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2772083524390759009F0698 /* Frameworks */ = {
+		27A579E62A326ADC008CAB61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A09B5152B1DDBEE22F1D201 /* Pods_DailyCatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27A579F02A326ADD008CAB61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		166333D1A72A6147B901A89C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B6D345525AAB59E2A6F780F6 /* Pods-DailyCat.debug.xcconfig */,
-				32F87504CF4D09818EB4A643 /* Pods-DailyCat.release.xcconfig */,
-				BFBA464C834A9C57979625FF /* Pods-DailyCatTests.debug.xcconfig */,
-				2BA0DAE20499D69B7119F094 /* Pods-DailyCatTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		2772081924390755009F0698 = {
 			isa = PBXGroup;
 			children = (
 				2772082424390755009F0698 /* DailyCat */,
-				2772083B24390759009F0698 /* DailyCatTests */,
+				27A579DB2A326AD7008CAB61 /* DailyCat2 */,
+				27A579EC2A326ADD008CAB61 /* DailyCat2Tests */,
+				27A579F62A326ADD008CAB61 /* DailyCat2UITests */,
 				2772082324390755009F0698 /* Products */,
-				166333D1A72A6147B901A89C /* Pods */,
 				6B345C05E4FDB73EC41C4F8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -104,8 +95,9 @@
 		2772082324390755009F0698 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2772082224390755009F0698 /* DailyCat.app */,
-				2772083824390759009F0698 /* DailyCatTests.xctest */,
+				27A579DA2A326AD6008CAB61 /* DailyCat.app */,
+				27A579E92A326ADC008CAB61 /* DailyCat2Tests.xctest */,
+				27A579F32A326ADD008CAB61 /* DailyCat2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,14 +105,8 @@
 		2772082424390755009F0698 /* DailyCat */ = {
 			isa = PBXGroup;
 			children = (
-				2772082524390755009F0698 /* AppDelegate.swift */,
-				2772082724390755009F0698 /* SceneDelegate.swift */,
-				2772082924390755009F0698 /* ViewController.swift */,
-				277E5E4E243B9E9900BBEBA8 /* AboutScreen.swift */,
-				2772082B24390755009F0698 /* Main.storyboard */,
 				2772082E24390759009F0698 /* Assets.xcassets */,
 				27720851243A7528009F0698 /* cat_in_box.jpg */,
-				2772083024390759009F0698 /* LaunchScreen.storyboard */,
 				2772083324390759009F0698 /* Info.plist */,
 				277208472439078A009F0698 /* Endpoint.swift */,
 				2772084B24390CDF009F0698 /* CatFacts.swift */,
@@ -129,21 +115,45 @@
 			path = DailyCat;
 			sourceTree = "<group>";
 		};
-		2772083B24390759009F0698 /* DailyCatTests */ = {
+		27A579DB2A326AD7008CAB61 /* DailyCat2 */ = {
 			isa = PBXGroup;
 			children = (
-				2772083C24390759009F0698 /* DailyCatTests.swift */,
-				2772083E24390759009F0698 /* Info.plist */,
+				27A579DC2A326AD7008CAB61 /* DailyCat2App.swift */,
+				27A579DE2A326AD7008CAB61 /* ContentView.swift */,
+				27A579E02A326ADC008CAB61 /* Assets.xcassets */,
+				27A579E22A326ADC008CAB61 /* Preview Content */,
 			);
-			path = DailyCatTests;
+			path = DailyCat2;
+			sourceTree = "<group>";
+		};
+		27A579E22A326ADC008CAB61 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				27A579E32A326ADC008CAB61 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27A579EC2A326ADD008CAB61 /* DailyCat2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27A579ED2A326ADD008CAB61 /* DailyCat2Tests.swift */,
+			);
+			path = DailyCat2Tests;
+			sourceTree = "<group>";
+		};
+		27A579F62A326ADD008CAB61 /* DailyCat2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				27A579F72A326ADD008CAB61 /* DailyCat2UITests.swift */,
+				27A579F92A326ADD008CAB61 /* DailyCat2UITestsLaunchTests.swift */,
+			);
+			path = DailyCat2UITests;
 			sourceTree = "<group>";
 		};
 		6B345C05E4FDB73EC41C4F8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27720853243AB326009F0698 /* GoogleUtilities.framework */,
-				139D29FF31E4F58A8C85DF85 /* Pods_DailyCat.framework */,
-				C72197702376335AD0E319E8 /* Pods_DailyCatTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,42 +161,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2772082124390755009F0698 /* DailyCat */ = {
+		27A579D92A326AD6008CAB61 /* DailyCat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2772084124390759009F0698 /* Build configuration list for PBXNativeTarget "DailyCat" */;
+			buildConfigurationList = 27A579FB2A326ADD008CAB61 /* Build configuration list for PBXNativeTarget "DailyCat" */;
 			buildPhases = (
-				F190AD7F7568119A8CA30769 /* [CP] Check Pods Manifest.lock */,
-				2772081E24390755009F0698 /* Sources */,
-				2772081F24390755009F0698 /* Frameworks */,
-				2772082024390755009F0698 /* Resources */,
+				27A579D62A326AD6008CAB61 /* Sources */,
+				27A579D72A326AD6008CAB61 /* Frameworks */,
+				27A579D82A326AD6008CAB61 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DailyCat;
-			productName = DailyCat;
-			productReference = 2772082224390755009F0698 /* DailyCat.app */;
+			productName = DailyCat2;
+			productReference = 27A579DA2A326AD6008CAB61 /* DailyCat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2772083724390759009F0698 /* DailyCatTests */ = {
+		27A579E82A326ADC008CAB61 /* DailyCat2Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2772084424390759009F0698 /* Build configuration list for PBXNativeTarget "DailyCatTests" */;
+			buildConfigurationList = 27A579FE2A326ADD008CAB61 /* Build configuration list for PBXNativeTarget "DailyCat2Tests" */;
 			buildPhases = (
-				3895E959FC0075901AB58291 /* [CP] Check Pods Manifest.lock */,
-				2772083424390759009F0698 /* Sources */,
-				2772083524390759009F0698 /* Frameworks */,
-				2772083624390759009F0698 /* Resources */,
+				27A579E52A326ADC008CAB61 /* Sources */,
+				27A579E62A326ADC008CAB61 /* Frameworks */,
+				27A579E72A326ADC008CAB61 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2772083A24390759009F0698 /* PBXTargetDependency */,
+				27A579EB2A326ADC008CAB61 /* PBXTargetDependency */,
 			);
-			name = DailyCatTests;
-			productName = DailyCatTests;
-			productReference = 2772083824390759009F0698 /* DailyCatTests.xctest */;
+			name = DailyCat2Tests;
+			productName = DailyCat2Tests;
+			productReference = 27A579E92A326ADC008CAB61 /* DailyCat2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27A579F22A326ADD008CAB61 /* DailyCat2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27A57A012A326ADD008CAB61 /* Build configuration list for PBXNativeTarget "DailyCat2UITests" */;
+			buildPhases = (
+				27A579EF2A326ADD008CAB61 /* Sources */,
+				27A579F02A326ADD008CAB61 /* Frameworks */,
+				27A579F12A326ADD008CAB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27A579F52A326ADD008CAB61 /* PBXTargetDependency */,
+			);
+			name = DailyCat2UITests;
+			productName = DailyCat2UITests;
+			productReference = 27A579F32A326ADD008CAB61 /* DailyCat2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,16 +220,20 @@
 		2772081A24390755009F0698 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Mike Cohen";
 				TargetAttributes = {
-					2772082124390755009F0698 = {
-						CreatedOnToolsVersion = 11.4;
+					27A579D92A326AD6008CAB61 = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
-					2772083724390759009F0698 = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = 2772082124390755009F0698;
+					27A579E82A326ADC008CAB61 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 27A579D92A326AD6008CAB61;
+					};
+					27A579F22A326ADD008CAB61 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 27A579D92A326AD6008CAB61;
 					};
 				};
 			};
@@ -220,25 +250,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2772082124390755009F0698 /* DailyCat */,
-				2772083724390759009F0698 /* DailyCatTests */,
+				27A579D92A326AD6008CAB61 /* DailyCat */,
+				27A579E82A326ADC008CAB61 /* DailyCat2Tests */,
+				27A579F22A326ADD008CAB61 /* DailyCat2UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2772082024390755009F0698 /* Resources */ = {
+		27A579D82A326AD6008CAB61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2772083224390759009F0698 /* LaunchScreen.storyboard in Resources */,
-				2772082F24390759009F0698 /* Assets.xcassets in Resources */,
-				2772082D24390755009F0698 /* Main.storyboard in Resources */,
-				27720852243A7528009F0698 /* cat_in_box.jpg in Resources */,
+				27A579E42A326ADC008CAB61 /* Preview Assets.xcassets in Resources */,
+				27A579E12A326ADC008CAB61 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2772083624390759009F0698 /* Resources */ = {
+		27A579E72A326ADC008CAB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27A579F12A326ADD008CAB61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,104 +283,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3895E959FC0075901AB58291 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DailyCatTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F190AD7F7568119A8CA30769 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DailyCat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		2772081E24390755009F0698 /* Sources */ = {
+		27A579D62A326AD6008CAB61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2772082A24390755009F0698 /* ViewController.swift in Sources */,
-				2772084E24390E4C009F0698 /* CatApi.swift in Sources */,
-				2772082624390755009F0698 /* AppDelegate.swift in Sources */,
-				2772084C24390CDF009F0698 /* CatFacts.swift in Sources */,
-				277208482439078A009F0698 /* Endpoint.swift in Sources */,
-				277E5E4F243B9E9900BBEBA8 /* AboutScreen.swift in Sources */,
-				2772082824390755009F0698 /* SceneDelegate.swift in Sources */,
+				27A579DF2A326AD7008CAB61 /* ContentView.swift in Sources */,
+				27A57A042A326B05008CAB61 /* Endpoint.swift in Sources */,
+				27A57A052A326B05008CAB61 /* CatFacts.swift in Sources */,
+				27A57A062A326B05008CAB61 /* CatApi.swift in Sources */,
+				27A579DD2A326AD7008CAB61 /* DailyCat2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2772083424390759009F0698 /* Sources */ = {
+		27A579E52A326ADC008CAB61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2772083D24390759009F0698 /* DailyCatTests.swift in Sources */,
+				27A579EE2A326ADD008CAB61 /* DailyCat2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27A579EF2A326ADD008CAB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A579FA2A326ADD008CAB61 /* DailyCat2UITestsLaunchTests.swift in Sources */,
+				27A579F82A326ADD008CAB61 /* DailyCat2UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2772083A24390759009F0698 /* PBXTargetDependency */ = {
+		27A579EB2A326ADC008CAB61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2772082124390755009F0698 /* DailyCat */;
-			targetProxy = 2772083924390759009F0698 /* PBXContainerItemProxy */;
+			target = 27A579D92A326AD6008CAB61 /* DailyCat */;
+			targetProxy = 27A579EA2A326ADC008CAB61 /* PBXContainerItemProxy */;
+		};
+		27A579F52A326ADD008CAB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27A579D92A326AD6008CAB61 /* DailyCat */;
+			targetProxy = 27A579F42A326ADD008CAB61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2772082B24390755009F0698 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2772082C24390755009F0698 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2772083024390759009F0698 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2772083124390759009F0698 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2772083F24390759009F0698 /* Debug */ = {
@@ -461,93 +443,153 @@
 			};
 			name = Release;
 		};
-		2772084224390759009F0698 /* Debug */ = {
+		27A579FC2A326ADD008CAB61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6D345525AAB59E2A6F780F6 /* Pods-DailyCat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyCat2/Preview Content\"";
 				DEVELOPMENT_TEAM = MJQW94A385;
-				INFOPLIST_FILE = DailyCat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2772084324390759009F0698 /* Release */ = {
+		27A579FD2A326ADD008CAB61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32F87504CF4D09818EB4A643 /* Pods-DailyCat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyCat2/Preview Content\"";
 				DEVELOPMENT_TEAM = MJQW94A385;
-				INFOPLIST_FILE = DailyCat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Daily Cat App Store";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		2772084524390759009F0698 /* Debug */ = {
+		27A579FF2A326ADD008CAB61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFBA464C834A9C57979625FF /* Pods-DailyCatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MJQW94A385;
-				INFOPLIST_FILE = DailyCatTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCatTests;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyCat.app/DailyCat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyCat2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyCat2";
 			};
 			name = Debug;
 		};
-		2772084624390759009F0698 /* Release */ = {
+		27A57A002A326ADD008CAB61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA0DAE20499D69B7119F094 /* Pods-DailyCatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MJQW94A385;
-				INFOPLIST_FILE = DailyCatTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCatTests;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyCat.app/DailyCat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyCat2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyCat2";
+			};
+			name = Release;
+		};
+		27A57A022A326ADD008CAB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJQW94A385;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyCat2;
+			};
+			name = Debug;
+		};
+		27A57A032A326ADD008CAB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJQW94A385;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcdevzone.DailyCat2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyCat2;
 			};
 			name = Release;
 		};
@@ -563,20 +605,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2772084124390759009F0698 /* Build configuration list for PBXNativeTarget "DailyCat" */ = {
+		27A579FB2A326ADD008CAB61 /* Build configuration list for PBXNativeTarget "DailyCat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2772084224390759009F0698 /* Debug */,
-				2772084324390759009F0698 /* Release */,
+				27A579FC2A326ADD008CAB61 /* Debug */,
+				27A579FD2A326ADD008CAB61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2772084424390759009F0698 /* Build configuration list for PBXNativeTarget "DailyCatTests" */ = {
+		27A579FE2A326ADD008CAB61 /* Build configuration list for PBXNativeTarget "DailyCat2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2772084524390759009F0698 /* Debug */,
-				2772084624390759009F0698 /* Release */,
+				27A579FF2A326ADD008CAB61 /* Debug */,
+				27A57A002A326ADD008CAB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27A57A012A326ADD008CAB61 /* Build configuration list for PBXNativeTarget "DailyCat2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27A57A022A326ADD008CAB61 /* Debug */,
+				27A57A032A326ADD008CAB61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

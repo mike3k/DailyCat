@@ -6,17 +6,26 @@
 //  Copyright © 2020 Mike Cohen. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class CatFacts: Endpoint {
+struct Fact: Codable {
+    let text: String
+    let deleted: Bool
+}
+
+class CatFacts: Endpoint, ObservableObject {
+
+    @Published var fact: Fact?
     init() {
         super.init(baseUrl: "https://cat-fact.herokuapp.com/")
     }
     
-    func getRandomFact(completion: @escaping ([AnyHashable: Any]?)->Void) {
-        fetch(method: "facts/random?animal_type=cat&amount=1") { (json) in
-            let fact = json as? [AnyHashable: Any]
-            completion(fact)
+    func getRandomFact() {
+        fetch(method: "facts/random?animal_type=cat&amount=1") { (data) in
+            let decoder =  JSONDecoder()
+            if let data = data, let result = try? decoder.decode(Fact.self, from: data) {
+                DispatchQueue.main.async { self.fact = result }
+            }
         }
     }
 }

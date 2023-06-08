@@ -6,7 +6,7 @@
 //  Copyright © 2020 Mike Cohen. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class Endpoint: NSObject {
     private let baseUrl: String
@@ -20,19 +20,14 @@ class Endpoint: NSObject {
         return URLRequest(url: url)
     }
     
-    func fetch(method: String, completion: @escaping (Any?)->Void) {
+    func fetch(method: String, completion: @escaping (Data?)->Void) {
         let urlString = "\(baseUrl)\(method)"
         guard let url = URL(string: urlString) else {
             completion(nil)
             return
         }
         let dataTask = URLSession.shared.dataTask(with: request(url: url), completionHandler: {(data, response, error) in
-            if let data = data,
-            let json = try? JSONSerialization.jsonObject(with: data, options: []) {
-                completion(json)
-            } else {
-                completion(nil)
-            }
+            completion(data)
         })
         dataTask.resume()
     }
