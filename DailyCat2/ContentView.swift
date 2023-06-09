@@ -20,10 +20,16 @@ struct ContentView: View {
             }
             Text(catFacts.fact?.text ?? "")
             Spacer()
-            Button("Next") {
-                catFacts.getRandomFact()
-                catImage.getRandomImage()
+            HStack {
+                Spacer()
+                Button(action:{
+                    catFacts.getRandomFact()
+                    catImage.getRandomImage()
 
+                }) {
+                    Text("Next")
+                    Image(systemName: "arrow.triangle.2.circlepath")
+                }
             }
             .scenePadding()
         }
