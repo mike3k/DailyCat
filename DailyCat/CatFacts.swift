@@ -20,12 +20,14 @@ class CatFacts: Endpoint, ObservableObject {
         super.init(baseUrl: "https://cat-fact.herokuapp.com/")
     }
     
-    func getRandomFact() {
-        fetch(method: "facts/random?animal_type=cat&amount=1") { (data) in
-            let decoder =  JSONDecoder()
-            if let data = data, let result = try? decoder.decode(Fact.self, from: data) {
-                DispatchQueue.main.async { self.fact = result }
-            }
+    func getRandomFact() async throws -> Fact {
+        let data = try await fetch(method: "facts/random?animal_type=cat&amount=1")
+        return try JSONDecoder().decode(Fact.self, from: data)
+    }
+
+    func reload() {
+        Task {
+            fact = try? await getRandomFact()
         }
     }
 }

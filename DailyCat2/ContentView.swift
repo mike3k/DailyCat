@@ -23,8 +23,8 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 Button(action:{
-                    catFacts.getRandomFact()
-                    catImage.getRandomImage()
+                    catFacts.reload()
+                    catImage.reload()
 
                 }) {
                     Text("Next")
@@ -35,8 +35,8 @@ struct ContentView: View {
         }
         .padding()
         .onAppear() {
-            catFacts.getRandomFact()
-            catImage.getRandomImage()
+            catFacts.reload()
+            catImage.reload()
         }
     }
 }

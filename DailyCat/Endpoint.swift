@@ -19,17 +19,12 @@ class Endpoint: NSObject {
     func request(url: URL) -> URLRequest {
         return URLRequest(url: url)
     }
-    
-    func fetch(method: String, completion: @escaping (Data?)->Void) {
+
+    func fetch(method: String) async throws -> Data {
         let urlString = "\(baseUrl)\(method)"
-        guard let url = URL(string: urlString) else {
-            completion(nil)
-            return
-        }
-        let dataTask = URLSession.shared.dataTask(with: request(url: url), completionHandler: {(data, response, error) in
-            completion(data)
-        })
-        dataTask.resume()
+        let url = URL(string: urlString)!
+        let (data,_) = try await URLSession.shared.data(for: request(url: url))
+        return data
     }
     
 }

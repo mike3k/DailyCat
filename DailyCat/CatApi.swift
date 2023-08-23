@@ -29,14 +29,16 @@ class CatApi: Endpoint, ObservableObject {
         return request
     }
     
-    func getRandomImage() {
-        fetch(method: "images/search?limit=1") { (data) in
-            let decoder =  JSONDecoder()
-            if let data = data,
-                let result = try? decoder.decode([CatImage].self, from: data),
-                result.count > 0 {
-                DispatchQueue.main.async { self.imageInfo = result[0] }
-            }
+    func getRandomImage() async throws -> CatImage {
+        let data = try await fetch(method: "images/search?limit=1")
+        let images = try JSONDecoder().decode([CatImage].self, from: data)
+        return images[0]
+    }
+
+    func reload() {
+        Task {
+            imageInfo = try? await getRandomImage()
         }
     }
+
 }
