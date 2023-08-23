@@ -17,6 +17,7 @@ struct CatImage: Codable {
     let height: Int
 }
 
+@MainActor
 class CatApi: Endpoint, ObservableObject {
     @Published var imageInfo: CatImage?
     init() {

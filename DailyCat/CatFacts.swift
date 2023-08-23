@@ -13,6 +13,7 @@ struct Fact: Codable {
     let deleted: Bool
 }
 
+@MainActor
 class CatFacts: Endpoint, ObservableObject {
 
     @Published var fact: Fact?
